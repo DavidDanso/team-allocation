@@ -1,0 +1,126 @@
+/* Fonts */
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "eina01-bold";
+  src: url("../fonts/eina01-bold.woff2");
+}
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "NeueHaasUnicaW1G-Light";
+  src: url("../fonts/NeueHaasUnicaW1G-Light.woff2");
+}
+.page-content {
+  --main-color: #eeeff4;
+  --text-color: #27282c;
+  --header-font: "eina01-bold";
+  --text-font: "NeueHaasUnicaW1G-Light";
+}
+
+/************************ accordion-Section *****************************/
+#hide_div {
+  display: none;
+}
+.button {
+  background-color: #0077cc;
+  color: var(--main-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  font-family: var(--text-font);
+}
+.button:hover {
+  background-color: #005fa3;
+  color: var(--main-color);
+}
+/*  */
+#modal-card {
+  border: 1px solid #668aff;
+  padding-bottom: 0px;
+}
+#modal-row {
+  border: 1px solid var(--text-color);
+  margin-bottom: 3%;
+  margin: 1%;
+}
+#card_img {
+  width: 50%;
+  margin-bottom: 4%;
+}
+.no_team h5 {
+  letter-spacing: 1px;
+  font-family: var(--text-font);
+  font-size: 2vh;
+}
+.no_team h1,
+p {
+  letter-spacing: 1px;
+  font-family: var(--text-font);
+  font-size: 2vh;
+  margin-bottom: 3%;
+}
+.no_team h1 span,
+.no_team p span {
+  font-size: 1.6vh;
+}
+.badge {
+  margin-left: 2%;
+}
+
+/********************** Extra small devices (portrait phones, less than 576px) ****************************/
+@media (max-width: 575.98px) {
+  .button {
+    margin: 4%;
+  }
+}
+/************************ Small devices (landscape phones, 576px and up) *****************************/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+/***************************** Medium devices (tablets, 768px and up) ********************************/
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/********************************** Large devices (desktops, 992px and up) *********************************/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/************************ Extra large devices (large desktops, 1200px and up) ********************************/
+@media (min-width: 1200px) {
+  /****** no_team-Section ******/
+  .button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-bottom: 2%;
+  }
+  /*  */
+  #modal-card {
+    border: 1px solid #668aff;
+    padding-bottom: 0px;
+  }
+  #modal-row {
+    margin-bottom: 3%;
+    margin: 1%;
+  }
+  #card_img {
+    width: 70%;
+    margin-bottom: 0%;
+  }
+
+  .no_team h1,
+  p {
+    letter-spacing: 1px;
+    font-size: 2.3vh;
+    margin-bottom: 3%;
+  }
+  .no_team h1 span,
+  .no_team p span {
+    font-size: 1.7vh;
+  }
+  .badge {
+    margin-left: 1%;
+  }
+}
+
+/************************ Extra large devices (extra large desktops, 1900px and up) ********************************/
+@media (min-width: 2000px) {
+}
